@@ -1,0 +1,162 @@
+* {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: url(https://i.gifer.com/2I3c.gif);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;
+            background-position: center;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 50px 20px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin-bottom: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: normal;
+            margin-bottom: 30px;
+        }
+
+        .featured-image {
+            display: block;
+            width: 230px;
+            height: 230px;
+            object-fit: cover;
+            margin: 0 auto 50px;
+        }
+
+        .article-text {
+            text-align: center;
+            line-height: 1.7;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Section styling */
+        #what-is-chatgpt {
+            padding: 50px 20px;
+        }
+
+        #how-to-use {
+        padding: 50px 20px;
+            }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-gap: 20px;
+            max-width: 1000px;
+            margin: 30px auto 0;
+        }
+
+        .grid-container section {
+            background-color: rgba(255, 255, 255, 0.7);
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer styling */
+        footer {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+            padding: 2rem 4rem;
+            text-align: center;
+            border-top: 1px solid #eae6e1;
+            margin-top: auto;
+            position: sticky;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer a {
+            text-decoration: none;
+            color: #000;
+            font-weight: normal;
+            letter-spacing: 1px;
+            transition: background-color 0.3s;
+        }
+
+        footer a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        footer a {
+            display: inline-block;
+            position: relative;
+            color: rgb(0, 0, 0);
+            text-decoration: none;
+            margin: 0 15px;
+            padding: 8px 15px;
+            border-radius: 20px;
+            background-color: rgba(255, 255, 255, 0.1);
+            transition: all 0.3s ease;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        footer a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0;
+            height: 100%;
+            background-color: rgb(186, 192, 215);
+            z-index: -1;
+            transition: width 0.3s ease;
+        }
+        
+        footer a:hover {
+            color: #333;
+        }
+        
+        footer a:hover:before {
+            width: 100%;
+        }
+        
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+            100% { transform: scale(1); }
+        }
+        
+        .pulse {
+            animation: pulse 0.5s ease-in-out;
+        }
+        
+        .active {
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        .error {
+            border: 2px solid red !important;
+            background-color: rgba(255, 0, 0, 0.05) !important;
+        }

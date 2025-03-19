@@ -1,0 +1,105 @@
+body {
+    font-family: Arial, sans-serif;
+    background: url(https://i.gifer.com/U8BI.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    text-align: center;
+}
+
+body {
+    background: url(https://i.gifer.com/9lZ7.gif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    line-height: 1.6;
+    min-height: 100vh;
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+
+body::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(255, 255, 255, 0.7); /* White with 70% opacity */
+    z-index: -1;
+}
+
+.container {
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+}
+
+.game-controller {
+    width: 250px;
+    margin: 0 auto 30px;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.description {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.back-button {
+    display: inline-block;
+    background-color: #000;
+    color: white;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 30px;
+    transition: background-color 0.3s ease;
+}
+
+.back-button:hover {
+    background-color: #333;
+}
+
+@keyframes popIn {
+    0% { transform: scale(0.6); opacity: 0; }
+    70% { transform: scale(1.1); opacity: 1; }
+    100% { transform: scale(1); opacity: 1; }
+}
+
+.container {
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7px );
+    -webkit-backdrop-filter: blur( 7px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 40px;
+    border-radius: 10px;
+    max-width: 600px;
+    width: 90%;
+    animation: popIn 1.5s ease-out forwards;
+}

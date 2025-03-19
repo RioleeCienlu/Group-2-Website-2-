@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Idea of HTML</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+
+    <a href="plang.html" class="nav-icon contact-icon" title="Home">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Basic Idea of HTML (HyperText Markup Language)</h1>
+    <p>HTML (HyperText Markup Language) is the standard language used to create web pages. It provides the structure of a webpage by using elements (tags) to define different parts of the content.</p>
+
+    <h2>1. Structure of an HTML Document</h2>
+    <p>An HTML document consists of different sections enclosed in tags (&lt;tag&gt;...&lt;/tag&gt;). Here’s a simple example:</p>
+    <div class="code-box">
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;title&gt;My First Webpage&lt;/title&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                &lt;p&gt;This is a simple HTML page.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </div>
+
+    <h2>2. Basic HTML Elements</h2>
+    <p>HTML uses tags to define elements. Some key ones include:</p>
+    <ul>
+        <li>&lt;!DOCTYPE html&gt; – Defines the document type (HTML5).</li>
+        <li>&lt;html&gt; – The root element of the page.</li>
+        <li>&lt;head&gt; – Contains meta information, links to stylesheets, and the page title.</li>
+        <li>&lt;title&gt; – Sets the title of the webpage (shown in the browser tab).</li>
+        <li>&lt;body&gt; – Contains the visible content of the webpage.</li>
+        <li>&lt;h1&gt; to &lt;h6&gt; – Headings (largest to smallest).</li>
+        <li>&lt;p&gt; – Paragraphs for text content.</li>
+        <li>&lt;a href="URL"&gt; – Creates hyperlinks.</li>
+        <li>&lt;img src="image.jpg" alt="description"&gt; – Displays an image.</li>
+        <li>&lt;ul&gt; &amp; &lt;ol&gt; – Unordered (bullet) and ordered (numbered) lists.</li>
+        <li>&lt;table&gt; – Creates tables for data.</li>
+        <li>&lt;form&gt; – Used to create input fields, buttons, and forms.</li>
+    </ul>
+
+    <h2>3. Attributes in HTML</h2>
+    <p>Attributes provide additional information about elements. Example:</p>
+    <div class="code-box">
+        <pre>&lt;a href="https://www.google.com" target="_blank"&gt;Visit Google&lt;/a&gt;</pre>
+    </div>
+    <p>href="https://www.google.com" → Specifies the link.<br>
+    target="_blank" → Opens in a new tab.</p>
+
+    <h2>4. Nesting & Hierarchy</h2>
+    <p>HTML elements are nested inside each other:</p>
+    <div class="code-box">
+        <pre>&lt;div&gt;
+    &lt;h2&gt;About Me&lt;/h2&gt;
+    &lt;p&gt;I love coding!&lt;/p&gt;
+&lt;/div&gt;</pre>
+    </div>
+    <p>&lt;div&gt; is a container for other elements.</p>
+
+    <h2>5. HTML & CSS (Styling)</h2>
+    <p>HTML defines structure, while CSS (Cascading Style Sheets) is used for styling.</p>
+    <div class="code-box">
+        <pre>&lt;p style="color: blue; font-size: 20px;"&gt;This is a styled paragraph.&lt;/p&gt;</pre>
+    </div>
+
+    <h2>6. HTML Forms (User  Input)</h2>
+    <p>Forms allow user input with fields like text boxes and buttons.</p>
+    <div class="code-box">
+        <pre>&lt;form&gt;
+    &lt;label for="name"&gt;Name:&lt;/label&gt;
+    &lt;input type="text" id="name" name="name"&gt;
+    &lt;button type="submit"&gt;Submit&lt;/button&gt;
+&lt;/form&gt;</pre>
+    </div>
+
+    <h2>7. Modern HTML Concepts</h2>
+    <p>Some modern concepts in HTML include:</p>
+    <ul>
+        <li><strong>Semantic HTML:</strong> Using meaningful tags like &lt;header&gt;, &lt;article&gt;, &lt;footer&gt;, etc.</li>
+        <li><strong>Responsive Design:</strong> Ensuring compatibility with mobile and desktop screens (usually done with CSS).</li>
+        <li><strong>JavaScript Integration:</strong> Adding interactivity to HTML pages.</li>
+    </ul>
+
+    <h2>Conclusion</h2>
+    <p>HTML is the foundation of web development. It structures content, links elements, and interacts with CSS & JavaScript for complete web applications.</p>
+
+    <script src="dynamic-background.js"></script>
+
+</body>
+</html>

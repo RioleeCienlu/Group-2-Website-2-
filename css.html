@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Basic Idea of CSS</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="common-styles.css">
+</head>
+<body>
+
+    <a href="plang.html" class="nav-icon contact-icon" title="Home">
+        <i class="fas fa-arrow-left"></i>
+    </a>
+
+    <h1>Basic Idea of CSS (Cascading Style Sheets)</h1>
+    <p>CSS (Cascading Style Sheets) is used to style and layout HTML elements, making webpages visually appealing. It controls colors, fonts, spacing, positioning, and responsiveness.</p>
+
+    <h2>1. How CSS Works</h2>
+    <p>CSS works by selecting HTML elements and applying styles to them. Example:</p>
+    <div class="code-box">
+        <pre>
+            &lt;!DOCTYPE html&gt;
+            &lt;html&gt;
+            &lt;head&gt;
+                &lt;style&gt;
+                    body {
+                        background-color: lightblue;
+                    }
+                    h1 {
+                        color: white;
+                        text-align: center;
+                    }
+                    p {
+                        font-size: 18px;
+                    }
+                &lt;/style&gt;
+            &lt;/head&gt;
+            &lt;body&gt;
+                &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+                &lt;p&gt;This is a styled paragraph.&lt;/p&gt;
+            &lt;/body&gt;
+            &lt;/html&gt;
+        </pre>
+    </div>
+
+    <h2>2. Ways to Add CSS</h2>
+    <p>There are three main ways to apply CSS to an HTML document:</p>
+    <ol>
+        <li><strong>Inline CSS (Inside Elements)</strong>
+            <div class="code-box">
+                <pre>&lt;p style="color: red; font-size: 20px;"&gt;This is a red paragraph.&lt;/p&gt;</pre>
+            </div>
+            Good for quick styling but not recommended for large projects.
+        </li>
+        <li><strong>Internal CSS (Inside &lt;style&gt; in &lt;head&gt;)</strong>
+            <div class="code-box">
+                <pre>&lt;style&gt;
+    h1 {
+        color: blue;
+    }
+&lt;/style&gt;</pre>
+            </div>
+            Best for single-page styling.
+        </li>
+        <li><strong>External CSS (Using a Separate .css File)</strong>
+            <div class="code-box">
+                <pre>&lt;link rel="stylesheet" href="styles.css"&gt;</pre>
+                <pre>styles.css:
+h1 {
+    color: green;
+    font-size: 24px;
+}</pre>
+            </div>
+            Best for large projects as it keeps styles separate from HTML.
+        </li>
+    </ol>
+
+    <h2>3. Basic CSS Selectors</h2>
+    <p>Selectors target elements for styling.</p>
+    <table>
+        <thead>
+            <tr>
+                <th>Selector Type</th>
+                <th>Example</th>
+                <th>Description</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Element Selector</td>
+                <td><code>h1 { color: blue; }</code></td>
+                <td>Targets all &lt;h1&gt; elements</td>
+            </tr>
+            <tr>
+                <td>Class Selector</td>
+                <td><code>.title { font-size: 20px; }</code></td>
+                <td>Targets elements with class="title"</td>
+            </tr>
+            <tr>
+                <td>ID Selector</td>
+                <td><code>#header { text-align: center; }</code></td>
+                <td>Targets an element with id="header"</td>
+            </tr>
+            <tr>
+                <td>Group Selector</td>
+                <td><code>h1, p { margin: 10px; }</code></td>
+                <td>Targets multiple elements at once</td>
+            </tr>
+            <tr>
+                <td>Universal Selector</td>
+                <td><code>* { margin: 0; }</code></td>
+                <td>Targets all elements</td>
+            </tr>
+        </tbody>
+    </table>
+    <p>Example:</p>
+    <div class="code-box">
+        <pre>&lt;h1 class="title"&gt;Hello, World!&lt;/h1&gt;
+&lt;p id="header"&gt;This is a paragraph.&lt;/p&gt;
+.title {
+    color: purple;
+}
+#header {
+    font-weight: bold;
+}</pre>
+    </div>
+
+    <h2>4. Common CSS Properties</h2>
+    <p>Some commonly used properties:</p>
+    <ul>
+        <li><strong>Text & Font Styles</strong>
+            <ul>
+                <li><code>color: red;</code> /* Text color */</li>
+                <li><code>font-size: 16px;</code> /* Text size */</li>
+                <li><code>font-family: Arial, sans-serif;</code> /* Font type */</li>
+                <li><code>text-align: center;</code> /* Align text */</li>
+                <li><code>font-weight: bold;</code> /* Bold text */</li>
+            </ul>
+        </li>
+        <li><strong>Box Model (Spacing & Sizing)</strong>
+            <ul>
+                <li><code>width: 200px;</code> /* Width of an element */</li>
+                <li><code>height: 100px;</code> /* Height */</li>
+                <li><code>padding: 10px;</code> /* Space inside element */</li>
+                <li><code>margin: 20px;</code> /* Space outside element */</li>
+                <li><code>border: 2px solid black;</code> /* Border */</li>
+            </ul>
+        </li>
+        <li><strong>Background & Colors</strong>
+            <ul>
+                <li><code>background-color: lightgray;</code></li>
+                <li><code>background-image: url('image.jpg');</code></li>
+            </ul>
+        </li>
+        <li><strong>Positioning & Layout</strong>
+            <ul>
+                <li><code>display: flex;</code> /* Flexbox layout */</li>
+                <li><code>position: absolute;</code> /* Positioning */</li>
+                <li><code>top: 50px;</code> /* Move element down */</li>
+                <li><code>left: 100px;</code> /* Move element right */</li>
+            </ul>
+        </li>
+    </ul>
+
+    <h2>5. CSS Layout Techniques</h2>
+    <p>Some popular CSS layout techniques include:</p>
+    <ul>
+        <li><strong>Flexbox:</strong> For flexible layouts.</li>
+        <li><strong>Grid:</strong> For advanced layouts.</li>
+        <li><strong>Media Queries:</strong> For responsive design (mobile-friendly sites).</li>
+    </ul>
+    <p>Example of a media query:</p>
+    <div class="code-box">
+        <pre>@media (max-width: 600px) {
+    body {
+        background-color: yellow;
+    }
+}</pre>
+    </div>
+
+    <h2>Conclusion</h2>
+    <p>CSS enhances HTML by adding style, layout, and responsiveness. It’s essential for modern web design.</p>
+
+    <script src="dynamic-background.js"></script>
+
+</body>
+</html>
